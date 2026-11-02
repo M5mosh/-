@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M5mOsH Project Hub</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0f172a;
+        color: #e2e8f0;
+        line-height: 1.7;
+      }
+      .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+      .hero { padding: 110px 0 80px; text-align: center; }
+      h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin: 0 0 18px; }
+      .muted { color: #cbd5e1; }
+      .card {
+        background: rgba(15, 23, 42, 0.7);
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        border-radius: 18px;
+        padding: 24px;
+        margin-top: 18px;
+      }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 24px; }
+      .item { background: rgba(30, 41, 59, 0.8); border-radius: 14px; padding: 20px; }
+      @media (max-width: 680px) { .grid { grid-template-columns: 1fr; } }
+    </style>
+  </head>
+  <body>
+    <div class="container hero">
+      <h1>M5mOsH Project Hub</h1>
+      <p class="muted">Creative ideas, challenge systems, and digital product foundations.</p>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <strong>Project direction</strong>
+        <p>This starter is designed to become a central home for experiments, product showcases, and future M5mOsH operations.</p>
+      </div>
+
+      <div class="grid">
+        <div class="item">
+          <h3>Portfolio</h3>
+          <p>Present creative work with a strong visual identity.</p>
+        </div>
+        <div class="item">
+          <h3>Challenges</h3>
+          <p>Track tasks, milestones, and structured execution.</p>
+        </div>
+        <div class="item">
+          <h3>Growth</h3>
+          <p>Turn concept work into a scalable ecosystem.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
