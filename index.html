@@ -1,59 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M5mOsH Project Hub</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #0f172a;
-        color: #e2e8f0;
-        line-height: 1.7;
-      }
-      .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-      .hero { padding: 110px 0 80px; text-align: center; }
-      h1 { font-size: clamp(2.5rem, 7vw, 5rem); margin: 0 0 18px; }
-      .muted { color: #cbd5e1; }
-      .card {
-        background: rgba(15, 23, 42, 0.7);
-        border: 1px solid rgba(148, 163, 184, 0.35);
-        border-radius: 18px;
-        padding: 24px;
-        margin-top: 18px;
-      }
-      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 24px; }
-      .item { background: rgba(30, 41, 59, 0.8); border-radius: 14px; padding: 20px; }
-      @media (max-width: 680px) { .grid { grid-template-columns: 1fr; } }
-    </style>
-  </head>
-  <body>
-    <div class="container hero">
-      <h1>M5mOsH Project Hub</h1>
-      <p class="muted">Creative ideas, challenge systems, and digital product foundations.</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M5mOsH Project Hub</title>
+  <meta name="description" content="M5mOsH Project Hub is a polished digital platform for portfolio, innovation, and product showcases." />
+  <style>
+    :root{--bg:#0f172a;--card:#162136;--ink:#edf6ff;--muted:#b7c5d8;--accent:#7bd0ff;--green:#7fe7c0;--gold:#f3c77a;--line:#22324d}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(180deg,#0f172a,#101d2d 100%);color:var(--ink);line-height:1.8}
+    a{text-decoration:none;color:inherit} .container{max-width:1180px;margin:0 auto;padding:0 20px}
+    header{background:rgba(15,23,42,.85);backdrop-filter:blur(8px);position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{display:flex;justify-content:space-between;align-items:center;height:76px}
+    .brand{font-size:1.8rem;font-weight:900}
+    .nav-links{display:flex;gap:22px;color:var(--muted);font-size:14px}
+    .btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:700}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),#8d7cff);color:#09111a}
+    .hero{padding:100px 0 80px;text-align:center}
+    h1{font-size:clamp(2.6rem,7vw,5.2rem);margin:0 0 18px}
+    .hero p{font-size:1.15rem;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
+    .card{background:rgba(22,33,54,.92);border:1px solid var(--line);border-radius:20px;padding:24px}
+    .card h3{margin-top:0}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:24px}
+    .stat{background:rgba(22,33,54,.9);border:1px solid var(--line);padding:22px;border-radius:18px;text-align:center}
+    .stat strong{display:block;font-size:2rem;color:var(--accent)}
+    .footer{padding:28px 0;background:#0a1220;color:#d5e6fa}
+    .footer-grid{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    @media (max-width:800px){.grid,.stats{grid-template-columns:1fr}.nav-links{display:none}.footer-grid{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">M5mOsH</div>
+      <nav class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#vision">Vision</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn primary" href="#features">Explore</a>
     </div>
+  </header>
 
-    <div class="container">
-      <div class="card">
-        <strong>Project direction</strong>
-        <p>This starter is designed to become a central home for experiments, product showcases, and future M5mOsH operations.</p>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow" style="color:var(--gold);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px">Project Ecosystem</div>
+        <h1>One identity. Many possibilities.</h1>
+        <p>From digital products to AI workflows, the M5mOsH ecosystem is designed to grow with vision, structure, and creative momentum.</p>
       </div>
+    </section>
 
+    <section id="features" class="container">
       <div class="grid">
-        <div class="item">
-          <h3>Portfolio</h3>
-          <p>Present creative work with a strong visual identity.</p>
-        </div>
-        <div class="item">
-          <h3>Challenges</h3>
-          <p>Track tasks, milestones, and structured execution.</p>
-        </div>
-        <div class="item">
-          <h3>Growth</h3>
-          <p>Turn concept work into a scalable ecosystem.</p>
-        </div>
+        <div class="card"><h3>Portfolio</h3><p>Build a digital presence that matches high-value creative work and product concepts.</p></div>
+        <div class="card"><h3>Innovation</h3><p>Develop challenge-led ideas with a sharper product strategy and better delivery structure.</p></div>
+        <div class="card"><h3>Growth</h3><p>Create a foundation that supports future launches, experiments, and bigger product goals.</p></div>
       </div>
+
+      <div class="stats">
+        <div class="stat"><strong>3</strong><span>Core pillars</span></div>
+        <div class="stat"><strong>∞</strong><span>Growth path</span></div>
+        <div class="stat"><strong>01</strong><span>Unified identity</span></div>
+      </div>
+    </section>
+
+    <section id="vision" class="container" style="padding-top:20px;padding-bottom:80px">
+      <div class="card">
+        <h3>Vision</h3>
+        <p style="margin:0;color:var(--muted)">M5mOsH Project Hub represents a long-term creative and product vision: a platform where ideas, innovation cycles, and digital execution can all grow under one strong identity.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div><strong>M5mOsH Project Hub</strong><br><span>Brand • Platform • Innovation</span></div>
+      <div>© 2026</div>
     </div>
-  </body>
+  </footer>
+</body>
 </html>
